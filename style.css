@@ -1,0 +1,174 @@
+body {
+    background: linear-gradient(-250deg, orange, white, blue, green);
+    position: relative;
+    left: 45%;
+    padding-top: 100px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    
+}
+#top {
+    height: 50px;
+    background: #ff9c51;
+    box-shadow: 0 0 5px #ff9c51;
+    -webkit-animation: top_anim 1.5s infinite;
+    animation: top_anim 1.5s infinite;
+}
+@-webkit-keyframes top_anim 
+{
+    0% {width: 0px;}
+    30%{width: 250px;}
+    70%{width: 250px;}
+    100%{width: 0px;}
+}
+@keyframes top_anim
+{
+    0% {width: 0px;}
+    30%{width: 250px;}
+    70%{width: 250px;}
+    100%{width: 0px;}
+}
+#middle {
+    height: 50px;
+    background: white;
+    box-shadow: 0 0 5px white;
+    -webkit-animation: middle_anim 1.5s infinite;
+    animation: middle_anim 1.5s infinite;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+@-webkit-keyframes middle_anim 
+{
+    0% {width: 0px;}
+    30%{width: 250px;}
+    70%{width: 250px;}
+    100%{width: 0px;}
+}
+@keyframes middle_anim
+{
+    0% {width: 0px;}
+    30%{width: 250px;}
+    70%{width: 250px;}
+    100%{width: 0px;}
+}
+#middle img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    -webkit-animation: img_anim 1.5s infinite linear;
+    -webkit-animation-delay: .2s;
+    animation: img_anim 1.5s infinite;
+    animation-delay: .2s;
+}
+@-webkit-keyframes img_anim
+{
+    0% {opacity: 0;}
+    30% {opacity: 0;-webkit-transform:rotate(0deg);transform:rotate(0deg);-ms-transform:rotate(0deg);}
+    38% {opacity: 1;}
+    62% {opacity: 1;}
+    70% {opacity: 0;-webkit-transform:rotate(360deg);transform:rotate(360deg);-ms-transform:rotate(360deg);}
+    100% {opacity: 0;}
+}
+@keyframes img_anim
+{
+    0% {opacity: 0;}
+    30% {opacity: 0;-webkit-transform:rotate(0deg);transform:rotate(0deg);-ms-transform:rotate(0deg);}
+    38% {opacity: 1;}
+    62% {opacity: 1;}
+    70% {opacity: 0;-webkit-transform:rotate(360deg);transform:rotate(360deg);-ms-transform:rotate(360deg);}
+    100% {opacity: 0;}
+}
+#bottom {
+    height: 50px;
+    background: #5aad5e;
+    box-shadow: 0 0 5px #5aad5e;
+    -webkit-animation: bottom_anim 4.5s infinite;
+    animation: bottom_anim 1.5s infinite;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+@-webkit-keyframes bottom_anim
+{
+    0% {width: 0px;}
+    30%{width: 250px;}
+    70%{width: 250px;}
+    100%{width: 0px;}
+}
+@keyframes bottom_anim
+{
+    0% {width: 0px;}
+    30%{width: 250px;}
+    70%{width: 250px;}
+    100%{width: 0px;}
+}
+#rod {
+    width: 10px;
+    height: 350px;
+    background: #874a21;
+    position: relative;
+    top: -152px;
+    left: -7px;
+  border-radius: 40%;
+}
+#text {
+  font-size: 45px;
+  font-weight: bold;
+  font-family:'Dancing Script', cursive;;
+  color: black;
+  line-height: 50px;
+  text-align: center;
+  border-top: 10px solid #FF8915;
+  border-left: 15px solid white;
+  border-right: 15px solid white;
+  border-bottom: 10px solid #148809;
+  border-radius: 5px;
+  display: block;
+  width: 1100px;
+  height: 50px;
+  position: relative;
+  left: -450px;
+  top: -600px;
+  -webkit-animation: text_anim 4.5s infinite;
+  animation: text_anim 4.5s infinite;
+}
+@-webkit-keyframes text_anim {
+  0% {text-shadow: 0 0 20px #6da2ff;}
+  50% {text-shadow: none;}
+  100% {text-shadow: 0 0 20px #6da2ff;}
+}
+@keyframes text_anim {
+  0% {text-shadow: 0 0 20px #6da2ff;}
+  50% {text-shadow: none;}
+  100% {text-shadow: 0 0 20px #6da2ff;}
+}
+#word {
+    font-size: 60px;
+    font-weight: bold;
+    font-family:'Dancing Script', cursive;;
+    color: darkolivegreen;
+ 
+    text-align: left;
+
+    border-radius: 5px;
+    display: block;
+    width: 750px;
+    height: 30px;
+    position: relative;
+    left: -350px;
+    top: -480px;
+    -webkit-animation: text_anim 4.5s infinite;
+    animation: text_anim 4.5s infinite;
+    @-webkit-keyframes text_anim {
+        0% {text-shadow: 0 0 20px #6da2ff;}
+        50% {text-shadow: none;}
+        100% {text-shadow: 0 0 20px #6da2ff;}
+      }
+      @keyframes text_anim {
+        0% {text-shadow: 0 0 20px #6da2ff;}
+        50% {text-shadow: none;}
+        100% {text-shadow: 0 0 20px #6da2ff;}
+      }
+    
+}
